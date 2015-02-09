@@ -1,0 +1,23 @@
+<div id="view-3" class="jumbotron" ng-show="game.status === gameAvailableStatus().inProgress ">
+  <div class="row">
+    <p id="currentPlayerData" class="col-sm-12">
+      <span id="playerName" class="text-uppercase"><strong>{{entryPoint.currentPlayer.name}}</strong></span> please introduce your score for the frame number <span id="frameNumber"><strong>{{entryPoint.frame.id}}</strong></span>
+    </p>
+  </div>
+
+  <form>
+    <div ng-if="!game.finalFrame">
+      <div ng-include="'./app/views/partials/normalFrame.html'"></div>
+    </div>
+
+    <div ng-if="game.finalFrame">
+      <div ng-include="'./app/views/partials/finalFrame.html'"></div>
+    </div>
+
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <input class="btn btn-success btn-lg btn-block" type="button" value="play" ng-click="submitScore()" ></input>
+      </div>
+    </div>
+  </form>
+</div>

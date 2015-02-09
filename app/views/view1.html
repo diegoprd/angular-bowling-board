@@ -1,0 +1,14 @@
+<div id="view-1" class="jumbotron" ng-show="game.status === gameAvailableStatus().newGame">
+    <form class="my-form" ng-submit="createGame()" name="myForm">
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <input class="players-amount form-control" placeholder="Amount of Players" type="number" name="players-amount" min="2" max="10" ng-model="game.playersAmount" required/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-12">
+        <input class="btn btn-success btn-lg btn-block create-game" type="submit" value="Start" />
+      </div>
+    </div>
+  </form>
+</div>

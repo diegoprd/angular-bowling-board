@@ -1,0 +1,19 @@
+<div id="view-4" class="jumbotron" ng-show="game.status === gameAvailableStatus().finishing ">
+  <p>Congratulations!!!</p>
+  <p>The Winner is: </p>
+
+  <p><strong>{{winnerName}}</strong></p>
+
+  <p>The final result was:</p>
+
+  <table class="table table-hover">
+    <thead>
+      <tr class="active">
+      <td>Name</td><td>Points</td>
+      </tr> 
+    </thead>
+    <tr ng-repeat="player in orderedPlayers">
+      <td>{{player.name}}</td><td>{{player.totalPoints}}</td>
+    </tr>
+  </table>
+</div>

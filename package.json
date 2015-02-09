@@ -1,0 +1,20 @@
+{
+  "name": "angular-bowling-board",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A quick example with AngularJS, almost a bowling board.",
+  "scripts": {
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "test": "karma start"
+  },
+  "devDependencies": {
+    "http-server": "^0.6.1",
+    "bower": "^1.3.1",
+    "karma": "~0.12.0",
+    "karma-jasmine": "~0.2.0",
+    "karma-chrome-launcher": "~0.1.7",
+    "lodash": "~3.1.0"
+  }
+}

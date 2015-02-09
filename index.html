@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html ng-app="bowlingBoard" lang="en" >
+  <head>
+
+    <!-- Loading CSS dependencies -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./app/styles/app.css" />
+    <link rel="stylesheet" type="text/css" href="./app/styles/animation.css" />
+    
+    <!-- Loading Angular Libraries -->
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="bower_components/ng-lodash/build/ng-lodash.min.js"></script>
+    
+    <!-- Loading the APP specific files -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/services/gameService.js"></script>
+    <script type="text/javascript" src="app/controllers/gameController.js"></script>
+
+  </head>
+  <body class="home" >
+    <div class="container" ng-controller="GameController" >
+      <h1>Bowling Board</h1>
+        <div ng-include="'./app/views/view1.html'"></div>
+        <div ng-include="'./app/views/view2.html'"></div>
+        <div ng-include="'./app/views/view3.html'"></div>
+        <div ng-include="'./app/views/view4.html'"></div>
+      </div>
+  </body>
+</html>
